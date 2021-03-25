@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.example.homework_3_1.ListTile
+        android:id="@+id/listTile1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hasCheckbox="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:leading="@drawable/ic_launcher_background"
+        app:subtitle="Friend!"
+        app:title="Hello my Friend!" />
+
+    <com.example.homework_3_1.ListTile
+        android:id="@+id/listTile2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hasCheckbox="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/listTile1"
+        app:leading="@drawable/ic_launcher_background"
+        app:title="Hello my Friend!" />
+
+    <com.example.homework_3_1.ListTile
+        android:id="@+id/listTile3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/listTile2"
+        app:leading="@drawable/ic_launcher_background"
+        app:subtitle="Friend!"
+        app:title="Hello my Friend!" />
+
+    <com.example.homework_3_1.ListTile
+        android:id="@+id/listTile4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hasCheckbox="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/listTile3"
+        app:subtitle="Friend!"
+        app:title="Hello my Friend!" />
+
+    <com.example.homework_3_1.ListTile
+        android:id="@+id/listTile5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/listTile4"
+        app:title="Hello my Friend!" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
