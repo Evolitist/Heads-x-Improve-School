@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ChainTypesFragment">
+
+    <fragment
+        android:id="@+id/ChainTypesFragment"
+        android:name="com.evolitist.lesson1.ChainTypesFragment"
+        android:label="@string/chain_types_fragment_label"
+        tools:layout="@layout/fragment_chain_types">
+        <action
+            android:id="@+id/action_ChainTypesFragment_to_RadialConstraintFragment"
+            app:destination="@id/RadialConstraintFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/RadialConstraintFragment"
+        android:name="com.evolitist.lesson1.RadialConstraintFragment"
+        android:label="RadialConstraintFragment"
+        tools:layout="@layout/fragment_radial_constraint" >
+        <action
+            android:id="@+id/action_RadialConstraintFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.evolitist.lesson1.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+        <action
+            android:id="@+id/action_SecondFragment_to_ChainTypesFragment"
+            app:destination="@id/ChainTypesFragment" />
+    </fragment>
+</navigation>
