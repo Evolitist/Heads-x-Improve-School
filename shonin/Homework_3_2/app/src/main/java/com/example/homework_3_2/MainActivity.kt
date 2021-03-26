@@ -37,17 +37,6 @@ class MainActivity : AppCompatActivity() {
                 CardVieww.visibility = View.GONE
             }
         }
-
-        setSupportActionBar(Toolbarr)
-        AppBarLayoutt.addOnOffsetChangedListener(object : AppBarLayout.OnOffsetChangedListener {
-            var isShow = false
-            var scrollRange = -1
-            override fun onOffsetChanged(appBarLayout: AppBarLayout, verticalOffset: Int) {
-                if (scrollRange == -1) {
-                    scrollRange = appBarLayout.totalScrollRange
-                }
-            }
-        })
     }
 
 
