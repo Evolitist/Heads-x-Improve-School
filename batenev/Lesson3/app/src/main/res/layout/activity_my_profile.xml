@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MyProfileActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFCD10"
+        android:elevation="10dp"
+        android:outlineProvider="paddedBounds"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="#FFCD10"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:titleEnabled="false">
+
+            <Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="#FFCD10"
+                android:elevation="10dp"
+                android:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+                android:outlineProvider="none"
+                android:title="@string/myProfile_toolbar_title_text"
+                android:titleTextAppearance="@style/Theme.Lesson3.ToolbarText"
+                app:layout_collapseMode="pin">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="16dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:contentDescription="@string/myProfile_editButton_contentDescription"
+                    android:src="@drawable/ic_baseline_edit_24" />
+            </Toolbar>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="56dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="17dp"
+                android:elevation="0dp"
+                app:cardCornerRadius="2dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/ivToolbarIcon"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:layout_marginVertical="16dp"
+                        android:layout_marginStart="16dp"
+                        android:src="@drawable/img_profile_specialist"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="33dp"
+                        android:layout_marginBottom="23dp"
+                        android:text="Карта №7898769\nСпециалист"
+                        android:textAppearance="@style/Theme.Lesson3.ToolbarText.CardText"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toEndOf="@id/ivToolbarIcon"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:colorEdgeEffect="#FFCD10"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="14dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/myProfile_personalData_text"
+                android:textColor="#F5BF1F"
+                android:textSize="14sp" />
+
+            <com.example.lesson3.ui.MyProfileListItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:data="Анастасия"
+                app:hint="Имя" />
+
+            <com.example.lesson3.ui.MyProfileListItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:data="Антонина"
+                app:hint="Фамилия" />
+
+            <com.example.lesson3.ui.MyProfileListItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:data="anykee.box@gmail.com"
+                app:hint="E-mail" />
+
+            <com.example.lesson3.ui.MyProfileListItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:data="HIE023UOI88"
+                app:hint="Логин" />
+
+            <com.example.lesson3.ui.MyProfileListItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:data="Санкт-Петербург"
+                app:hasButton="true"
+                app:hint="Ваш регион" />
+
+            <com.example.lesson3.ui.MyProfileListItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:buttonPosition="Left"
+                app:data="Выйти из аккаунта"
+                app:hasButton="true" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
