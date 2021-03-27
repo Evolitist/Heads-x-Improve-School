@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="myProfile_cardNumber_text">Карта</string>
+    <string name="myProfile_toolbar_title_text">Личный профиль</string>
+    <string name="myProfile_editButton_contentDescription">Edit button</string>
+    <string name="myProfile_personalData_text">Личные данные</string>
+</resources>
