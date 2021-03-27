@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ListTile">
+        <attr name="leading" format="reference" />
+        <attr name="android:title" format="string" />
+        <!--Решение с помощью isVisible -->
+        <!--<attr name="visibilityImg" format="boolean"/>-->
+        <attr name="visibility_img">
+            <enum name="visible" value="0" />
+            <enum name="gone" value="2" />
+        </attr>
+        <attr name="android:subtitle" format="string" />"
+        <attr name="hasCheckbox" format="boolean" />
+    </declare-styleable>
+</resources>
