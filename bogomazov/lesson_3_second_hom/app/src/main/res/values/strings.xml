@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Личный кабинет</string>
+    <string name="dataPerson">Личные данные</string>
+    <string name="titleName">Имя</string>
+    <string name="textName">Анастасия</string>
+    <string name="titleSurname">Фамилия</string>
+    <string name="emailTitle">E-mail</string>
+    <string name="loginTitle">Логин</string>
+    <string name="cityTitle">Ваш регион</string>
+    <string name="surnameText">Антонина</string>
+    <string name="textEmail">anykee.box@gmail.ru</string>
+    <string name="textLogin">HIE023UOI88</string>
+    <string name="textCity">Санкт-Петербург</string>
+</resources>

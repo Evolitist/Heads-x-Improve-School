@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardBackgroundColor="@color/sunflower"
+        app:cardElevation="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/arrowBackHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintRight_toLeftOf="@+id/titleHeader"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+            <TextView
+                android:id="@+id/titleHeader"
+                style="@style/TextAppearance.Lesson_3_second_hom.NameApp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+
+                android:text="Личный профиль"
+
+                app:layout_constraintEnd_toStartOf="@+id/editHeader"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/arrowBackHeader"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/editHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/titleHeader"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_edit_24" />
+
+            <!-- Можно переипользовать, но что делать с привязками и текст, но снова привязки -->
+            <!--<include layout="@layout/image_edit"/> -->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toBottomOf="@+id/titleHeader">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/img_profile_spechialist"
+
+                    />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/TextAppearance.Lesson_3_second_hom.Main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+
+                    android:text="Карта №7898769 \nСпециалист"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView4"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/dataPersonTextView"
+        style="@style/TextAppearance.Lesson_3_second_hom.MainTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+
+        android:layout_marginTop="32dp"
+
+        android:text="@string/dataPerson"
+        app:layout_constraintBottom_toTopOf="@id/nameUserTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <TextView
+        android:id="@+id/nameUserTextView"
+        style="@style/TextAppearance.Lesson_3_second_hom.Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+
+        android:text="@string/textName"
+
+        app:layout_constraintBottom_toTopOf="@id/surnameUserTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dataPersonTextView" />
+
+    <TextView
+        android:id="@+id/surnameUserTextView"
+        style="@style/TextAppearance.Lesson_3_second_hom.Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+
+        android:text="@string/surnameText"
+
+        app:layout_constraintBottom_toTopOf="@id/emailUserTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameUserTextView" />
+
+    <TextView
+        android:id="@+id/emailUserTextView"
+        style="@style/TextAppearance.Lesson_3_second_hom.Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+
+        android:text="@string/textEmail"
+
+        app:layout_constraintBottom_toTopOf="@id/idUserTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/surnameUserTextView" />
+
+    <TextView
+        android:id="@+id/idUserTextView"
+        style="@style/TextAppearance.Lesson_3_second_hom.Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+
+        android:text="@string/textLogin"
+
+        app:layout_constraintBottom_toTopOf="@id/cityUserTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailUserTextView" />
+
+    <TextView
+        android:id="@+id/cityUserTextView"
+        style="@style/TextAppearance.Lesson_3_second_hom.Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+
+        android:text="@string/textCity"
+
+        app:layout_constraintBottom_toTopOf="@id/logOutTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idUserTextView" />
+
+    <TextView
+        android:id="@+id/logOutTextView"
+        style="@style/TextAppearance.Lesson_3_second_hom.Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="32dp"
+        android:text="Выйти из аккаунта"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/arrowBackBody"
+        app:layout_constraintTop_toBottomOf="@+id/cityUserTextView" />
+
+    <TextView
+        android:id="@+id/titleName"
+        style="@style/TextAppearance.Lesson_3_second_hom.Secondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="16dp"
+
+        android:text="@string/titleName"
+        app:layout_constraintBottom_toTopOf="@+id/nameUserTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dataPersonTextView"
+        app:layout_constraintVertical_bias="1" />
+
+    <TextView
+        android:id="@+id/titleSurname"
+        style="@style/TextAppearance.Lesson_3_second_hom.Secondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="16dp"
+
+        android:text="@string/titleSurname"
+        app:layout_constraintBottom_toTopOf="@+id/surnameUserTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameUserTextView"
+        app:layout_constraintVertical_bias="1"
+        />
+
+    <TextView
+        android:id="@+id/emailTitle"
+        style="@style/TextAppearance.Lesson_3_second_hom.Secondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="16dp"
+
+        android:text="@string/emailTitle"
+        app:layout_constraintBottom_toTopOf="@+id/emailUserTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/surnameUserTextView"
+        app:layout_constraintVertical_bias="1"
+        />
+
+    <TextView
+        android:id="@+id/loginTitle"
+        style="@style/TextAppearance.Lesson_3_second_hom.Secondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="16dp"
+
+        android:text="@string/loginTitle"
+        app:layout_constraintBottom_toTopOf="@+id/idUserTextView"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailUserTextView"
+        app:layout_constraintVertical_bias="1"
+        />
+
+    <TextView
+        android:id="@+id/cityTitle"
+        style="@style/TextAppearance.Lesson_3_second_hom.Secondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="16dp"
+
+        android:text="@string/cityTitle"
+        app:layout_constraintBottom_toTopOf="@+id/cityUserTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idUserTextView"
+        app:layout_constraintVertical_bias="2" />
+
+    <ImageView
+        android:id="@+id/arrowBackBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/logOutTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cityUserTextView"
+        app:srcCompat="@drawable/ic_menu_exit"
+        app:layout_constraintVertical_bias="1"
+        />
+
+    <ImageView
+        android:id="@+id/editBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/cityUserTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/cityUserTextView"
+        app:layout_constraintTop_toTopOf="@+id/cityUserTextView"
+        app:srcCompat="@drawable/ic_baseline_edit_24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
