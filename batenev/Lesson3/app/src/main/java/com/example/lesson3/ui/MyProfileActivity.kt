@@ -14,6 +14,10 @@ class MyProfileActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMyProfileBinding.inflate(layoutInflater)
 
+        binding.toolbar.setNavigationOnClickListener {
+            finish()
+        }
+
         setContentView(binding.root)
     }
 }

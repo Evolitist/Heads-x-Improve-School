@@ -10,8 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FFCD10"
-        android:elevation="10dp"
-        android:outlineProvider="paddedBounds"
+        android:stateListAnimator="@animator/appbar_shadow_animator"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -24,6 +23,7 @@
             app:titleEnabled="false">
 
             <Toolbar
+                android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:background="#FFCD10"
