@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/cloud">
+
+
+    <com.example.hw3.ListTileView
+        android:id="@+id/TTH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hasCheckbox="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:leading="@drawable/tth"
+        app:subtitle="Since 2014"
+        app:title="These Things Happen" />
+
+    <com.example.hw3.ListTileView
+        android:id="@+id/WIDO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hasCheckbox="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TTH"
+        app:leading="@drawable/wido"
+        app:subtitle="Since 2015"
+        app:title="When It's Dark Out" />
+
+    <com.example.hw3.ListTileView
+        android:id="@+id/ScaryNights"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hasCheckbox="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/WIDO"
+        app:leading="@drawable/sn"
+        app:subtitle="Since 2019"
+        app:title="Scary Nights" />
+
+    <com.example.hw3.ListTileView
+        android:id="@+id/ESH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ScaryNights"
+        app:leading="@drawable/esh"
+        app:subtitle="Since 2020"
+        app:title="Everything's Strange Here" />
+
+    <com.example.hw3.ListTileView
+        android:id="@+id/TTH2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ESH"
+        app:subtitle="2021?"
+        app:title="These things happen too" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

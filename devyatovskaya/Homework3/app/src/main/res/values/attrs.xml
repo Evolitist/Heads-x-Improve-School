@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ListTileView">
+        <attr name="leading" format="reference" />
+        <attr name="title" format="string"/>
+        <attr name="subtitle" format="string"/>
+        <attr name="hasCheckbox" format="boolean" value="false"/>
+    </declare-styleable>
+</resources>
