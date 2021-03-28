@@ -16,7 +16,7 @@ class RadialConstraintFragment : ViewBindingFragment(R.layout.fragment_radial_co
         binding.toolbar.setupWithNavController(findNavController())
 
         binding.buttonNext.setOnClickListener {
-            findNavController().navigate(R.id.action_RadialConstraintFragment_to_SecondFragment)
+            findNavController().navigate(R.id.action_RadialConstraintFragment_to_itemFragment)
         }
     }
 }

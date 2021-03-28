@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="ListTileView">
-        <attr name="image" format="reference"/>
+        <attr name="android:src" format="reference"/>
+        <attr name="srcCompat" format="reference"/>
+        <attr name="leading" format="reference"/>
         <attr name="android:text" format="string"/>
+        <attr name="title" format="string"/>
+        <attr name="subtitle" format="string"/>
+        <attr name="hasCheckbox" format="boolean"/>
     </declare-styleable>
 </resources>
