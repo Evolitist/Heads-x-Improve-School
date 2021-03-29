@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">Homework4</string>
+    <string name="myBills_list_screen_toolbar_title">Моя квартира</string>
+    <string name="menu_action_info">Информация</string>
+    <string name="menu_action_home">Домой</string>
+
+    <string name="myBills_list_screen_item_title_bill">Квитанции</string>
+    <string name="myBills_list_screen_item_title_counter">Счетчики</string>
+    <string name="myBills_list_screen_item_title_installment">Рассрочка</string>
+    <string name="myBills_list_screen_item_title_insurance">Страхование</string>
+    <string name="myBills_list_screen_item_title_internetAndTv">Интернет и ТВ</string>
+    <string name="myBills_list_screen_item_title_intercom">Домофон</string>
+    <string name="myBills_list_screen_item_title_security">Охрана</string>
+    <string name="myBills_list_screen_item_title_ukContacts">Контакты УК и служб</string>
+    <string name="myBills_list_screen_item_title_myRequests">Мои заявки</string>
+    <string name="myBills_list_screen_item_title_about">Памятка жителя %1s</string>
+
+    <string name="myBills_list_screen_item_subtitle_bill">%1s \u20BD</string>
+    <string name="myBills_list_screen_item_subtitle_counter">%1s</string>
+    <string name="myBills_list_screen_item_subtitle_installment">Сл. платеж %1s</string>
+    <string name="myBills_list_screen_item_subtitle_insurance">Полис до %1s</string>
+    <string name="myBills_list_screen_item_subtitle_internetAndTv">Баланс %1s \u20BD</string>
+    <string name="myBills_list_screen_item_subtitle_intercom">%1s</string>
+    <string name="myBills_list_screen_item_subtitle_security">%1s</string>
+
 </resources>
