@@ -64,7 +64,7 @@ class MyBillsListFragment : Fragment(R.layout.mybills_list_fragment) {
                     R.id.action_home -> {
                         Toast.makeText(
                             requireContext(),
-                            "Home button has been clicked!",
+                            "Home button has been pressed!",
                             Toast.LENGTH_SHORT
                         ).show()
                         true

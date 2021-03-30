@@ -4,6 +4,7 @@ import android.content.Context
 import android.graphics.drawable.Drawable
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.core.content.res.ResourcesCompat
 import androidx.core.content.res.ResourcesCompat.getDrawable
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.DiffUtil
@@ -14,8 +15,10 @@ import com.example.homework4.databinding.MybillsListItemRectangleBinding
 import com.example.homework4.databinding.MybillsListItemSquareBinding
 import com.google.android.material.snackbar.Snackbar
 import data.Bill
+import data.BillData
 import data.BillType
 import data.BillType.*
+import java.text.DecimalFormat
 
 class MyBillsListAdapter : ListAdapter<Bill, RecyclerView.ViewHolder>(DiffCallback) {
 
@@ -109,35 +112,54 @@ class MyBillsListAdapter : ListAdapter<Bill, RecyclerView.ViewHolder>(DiffCallba
         }
     }
 
-    private fun getSubtitleFromBill(bill: Bill): String? {
+    private fun getSubtitleFromBill(bill: Bill): CharSequence? {
+        if (bill.data is BillData.Empty) return null
+        val data = bill.data as BillData.Data<*>
         return when (bill.type) {
-            BILL -> context.getString(R.string.myBills_list_screen_item_subtitle_bill, bill.data)
-            COUNTER -> context.getString(
-                R.string.myBills_list_screen_item_subtitle_counter,
-                bill.data
-            )
+            BILL ->
+                context.getString(
+                    R.string.myBills_list_screen_item_subtitle_bill,
+                    decorateNumber(data.getDouble())
+                )
+
+            COUNTER -> {
+                if (data.getBoolean()) {
+                    context.getText(R.string.myBills_list_screen_item_subtitle_counter_request)
+
+                } else {
+                    context.getText(R.string.myBills_list_screen_item_subtitle_counter_requested)
+
+                }
+            }
             INSTALLMENT -> context.getString(
                 R.string.myBills_list_screen_item_subtitle_installment,
-                bill.data
+                data.getString()
             )
             INSURANCE -> context.getString(
                 R.string.myBills_list_screen_item_subtitle_insurance,
-                bill.data
+                data.getString()
             )
             INTERNET_AND_TV -> context.getString(
                 R.string.myBills_list_screen_item_subtitle_internetAndTv,
-                bill.data
+                data.getString()
             )
             INTERCOM -> context.getString(
                 R.string.myBills_list_screen_item_subtitle_intercom,
-                bill.data
+                data.getString()
             )
             SECURITY -> context.getString(
                 R.string.myBills_list_screen_item_subtitle_security,
-                bill.data
+                data.getString()
             )
             else -> null
         }
+    }
+
+    private fun decorateNumber(number: Double): String {
+        return DecimalFormat.getInstance()
+            .format(number)
+            .replace(",", " ")
+            .replace(".", ",")
     }
 
     inner class BillsSquareViewHolder(
@@ -157,6 +179,15 @@ class MyBillsListAdapter : ListAdapter<Bill, RecyclerView.ViewHolder>(DiffCallba
                 } else {
                     subtitle.isVisible = true
                     subtitle.text = billSubtitle
+                    if (billSubtitle.contains("-")) { // kinda cringe, i know
+                        subtitle.setTextColor(
+                            ResourcesCompat.getColor(
+                                context.resources,
+                                R.color.coral,
+                                null
+                            )
+                        )
+                    }
                 }
                 root.setOnClickListener {
                     Snackbar.make(recycler, title.text, Snackbar.LENGTH_SHORT)

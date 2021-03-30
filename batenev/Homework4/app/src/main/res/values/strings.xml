@@ -16,7 +16,8 @@
     <string name="myBills_list_screen_item_title_about">Памятка жителя %1s</string>
 
     <string name="myBills_list_screen_item_subtitle_bill">%1s \u20BD</string>
-    <string name="myBills_list_screen_item_subtitle_counter">%1s</string>
+    <string name="myBills_list_screen_item_subtitle_counter_request"><font fgcolor="#FFFF4242">Подайте показания</font></string>
+    <string name="myBills_list_screen_item_subtitle_counter_requested">Показания поданы</string>
     <string name="myBills_list_screen_item_subtitle_installment">Сл. платеж %1s</string>
     <string name="myBills_list_screen_item_subtitle_insurance">Полис до %1s</string>
     <string name="myBills_list_screen_item_subtitle_internetAndTv">Баланс %1s \u20BD</string>
