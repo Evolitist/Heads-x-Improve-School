@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ListTile">
+        <attr name="leading" format="reference" />
+        <attr name="title" format="string"/>
+        <attr name="subtitle" format="string"/>
+        <attr name="hasCheckbox" format="boolean" value="false"/>
+    </declare-styleable>
+
+    <declare-styleable name="ListTile2">
+        <attr name="leading2" format="reference"/>
+        <attr name="title2" format="string"/>
+        <attr name="subtitle2" format="string"/>
+        <attr name="color_subtitle" format="color"/>
+    </declare-styleable>
+</resources>
