@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Homework5</string>
+    <string name="activity_first_text">Activity 1</string>
+    <string name="btn_go_to_2_text">go to 2</string>
+    <string name="btn_go_to_4_text">go to 4</string>
+    <string name="activity_second_text">Activity 2</string>
+    <string name="btn_go_to_3_text">got to 3</string>
+    <string name="activity_third_text">Activity 3</string>
+    <string name="btn_go_to_5_text">go to 5</string>
+    <string name="btn_go_to_1_text">go to 1</string>
+    <string name="activity_fourth_text">Activity 4</string>
+    <string name="btn_go_to_4_again_text">go to 4 again</string>
+    <string name="activity_fifth_text">Activity 5</string>
+    <string name="btn_deliver_result_text">deliver result</string>
+    <string name="activity_fifth_result_field_hint">Result Field</string>
+    <string name="btn_save_text">Save</string>
 </resources>

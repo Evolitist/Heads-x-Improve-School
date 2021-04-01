@@ -9,7 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Homework5">
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.FifthActivity" />
+        <activity
+            android:name=".ui.FourthActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".ui.ThirdActivity" />
+        <activity android:name=".ui.SecondActivity" />
+        <activity
+            android:name=".ui.FirstActivity"
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
