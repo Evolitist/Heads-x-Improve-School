@@ -2,9 +2,8 @@ package com.example.homework5.ui
 
 import android.app.Activity
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.PersistableBundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.os.bundleOf
 import com.example.homework5.databinding.ActivityFifthBinding
 import data.Data
@@ -16,13 +15,13 @@ class FifthActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        binding = ActivityFifthBinding.inflate(layoutInflater)
+
         savedInstanceState?.let { bundle ->
             bundle.getParcelable<Data>(DATA_FIELD)?.let {
                 binding.tvDataField.text = it.value
             }
         }
-
-        binding = ActivityFifthBinding.inflate(layoutInflater)
 
         with(binding) {
             btnDeliverResult.setOnClickListener {
@@ -41,7 +40,6 @@ class FifthActivity : AppCompatActivity() {
 
     override fun onSaveInstanceState(outState: Bundle) {
         binding.etResultField.text.takeIf { it.isNotEmpty() }?.let {
-
             outState.putAll(
                 bundleOf(DATA_FIELD to Data(it.toString()))
             )
