@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.homework5">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,15 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Homework5">
+        <activity android:name=".ui.ServicesListActivity"></activity>
         <activity android:name=".ui.FifthActivity" />
         <activity
-            android:name=".ui.FourthActivity"
-            android:launchMode="singleTop" />
+            android:launchMode="singleTop"
+            android:name=".ui.FourthActivity" />
         <activity android:name=".ui.ThirdActivity" />
         <activity android:name=".ui.SecondActivity" />
         <activity
-            android:name=".ui.FirstActivity"
-            android:launchMode="singleTask">
+            android:launchMode="singleTask"
+            android:name=".ui.FirstActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

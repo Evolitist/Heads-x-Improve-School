@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".ui.ServicesListActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_height="235dp"
+            android:layout_width="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:titleEnabled="false">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_height="235dp"
+                android:layout_width="match_parent">
+
+                <ImageView
+                    android:elevation="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent" />
+
+                <ImageView
+                    android:id="@+id/collapsingToolbarIcon"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/ic_logo_small"
+                    app:layout_constraintBottom_toTopOf="@id/collapsingToolbarText"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintVertical_bias="" />
+
+                <TextView
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/collapsingToolbarText"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="45dp"
+                    android:layout_width="wrap_content"
+                    android:lineSpacingExtra="8sp"
+                    android:paddingHorizontal="50dp"
+                    android:text="@string/servicesList_collapsingToolbar_text"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                app:layout_collapseMode="pin"
+                app:title="@string/servicesList_toolbar_title_text" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

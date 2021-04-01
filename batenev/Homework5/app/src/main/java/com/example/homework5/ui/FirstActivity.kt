@@ -34,6 +34,15 @@ class FirstActivity : AppCompatActivity() {
                     )
                 )
             }
+
+            btnGoToSecondPart.setOnClickListener {
+                startActivity(
+                    Intent(
+                        this@FirstActivity,
+                        ServicesListActivity::class.java
+                    )
+                )
+            }
         }
 
 

@@ -2,13 +2,14 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_width="match_parent"
     tools:context=".ui.FirstActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/activityLabel"
         android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
         android:text="@string/activity_first_text"
         android:textAppearance="@style/ActivityLabelTextAppearance"
         app:layout_constraintBottom_toTopOf="@id/btnGoToSecondActivity"
@@ -18,9 +19,9 @@
 
     <Button
         android:id="@+id/btnGoToFourthActivity"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
         android:text="@string/btn_go_to_4_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,12 +29,22 @@
 
     <Button
         android:id="@+id/btnGoToSecondActivity"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
         android:text="@string/btn_go_to_2_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnGoToSecondPart"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/btn_to_second_part_text"
+        app:layout_constraintBottom_toTopOf="@id/btnGoToSecondActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activityLabel" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

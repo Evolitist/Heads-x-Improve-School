@@ -14,4 +14,8 @@
     <string name="btn_deliver_result_text">deliver result</string>
     <string name="activity_fifth_result_field_hint">Result Field</string>
     <string name="btn_save_text">Save</string>
+    <string name="servicesList_toolbar_title_text">Услуги</string>
+    <string name="services_service_offer_text">Предложить услугу</string>
+    <string name="servicesList_collapsingToolbar_text">Услуги управляющей компании будут доступны после сдачи дома</string>
+    <string name="btn_to_second_part_text">to second part</string>
 </resources>
