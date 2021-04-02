@@ -33,7 +33,7 @@ class ServiceListDecoration : RecyclerView.ItemDecoration() {
             }
         }
 
-        if (currentPosition < 0) {
+        if (currentPosition > 0) {
             outRect.right = 8.toDp()
             outRect.left = 8.toDp()
         }
