@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
                 PlaceholderItem(
                     UUID.randomUUID().toString(),
                     "Царь пышка",
-                    "Скидка 10% на выпечку\n по коду",
+                    "Скидка 10% на выпечку\nпо коду",
                     "Лермонтовский пр, 52, МО №1",
                     ContextCompat.getDrawable(this, R.drawable.ic_launcher_background),
                     3
