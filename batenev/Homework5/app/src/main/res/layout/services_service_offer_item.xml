@@ -2,6 +2,7 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:foreground="?attr/selectableItemBackground"
     android:layout_height="wrap_content"
     android:layout_width="match_parent"
     app:cardBackgroundColor="@color/pale_grey"
@@ -29,7 +30,7 @@
             android:layout_marginVertical="15dp"
             android:layout_width="wrap_content"
             android:maxLines="1"
-            android:text="@string/services_service_offer_text"
+            android:text="@string/servicesList_serviceOffer_text"
             android:textColor="@color/charcoal_grey"
             android:textSize="16sp" />
     </LinearLayout>

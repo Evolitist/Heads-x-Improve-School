@@ -11,9 +11,11 @@ import com.example.homework5.databinding.ServicesListHeaderItemBinding
 import com.example.homework5.databinding.ServicesListItemBinding
 import com.example.homework5.databinding.ServicesServiceOfferItemBinding
 import data.ServiceDiscount
+import utils.OnServiceItemClickedListener
 
-class ServiceItemListAdapter :
-    ListAdapter<ServiceDiscount, RecyclerView.ViewHolder>(DiffUtilCallback) {
+class ServiceItemListAdapter(
+    val listener: OnServiceItemClickedListener,
+) : ListAdapter<ServiceDiscount, RecyclerView.ViewHolder>(DiffUtilCallback) {
 
     private lateinit var recyclerView: RecyclerView
 
@@ -21,17 +23,27 @@ class ServiceItemListAdapter :
         return when (viewType) {
             R.layout.services_list_header_item -> {
                 HeaderVH(
-                    ServicesListHeaderItemBinding.inflate(LayoutInflater.from(parent.context))
+                    ServicesListHeaderItemBinding.inflate(
+                        LayoutInflater.from(parent.context),
+                        parent,
+                        false
+                    )
                 )
             }
             R.layout.services_service_offer_item -> {
                 ServiceOfferVH(
-                    ServicesServiceOfferItemBinding.inflate(LayoutInflater.from(parent.context))
+                    ServicesServiceOfferItemBinding.inflate(LayoutInflater.from(parent.context),
+                        parent,
+                        false
+                    )
                 )
             }
             R.layout.services_list_item -> {
                 ServiceListItemVH(
-                    ServicesListItemBinding.inflate(LayoutInflater.from(parent.context))
+                    ServicesListItemBinding.inflate(LayoutInflater.from(parent.context),
+                        parent,
+                        false
+                    )
                 )
             }
             else -> error("Unsupported viewType!")
@@ -80,22 +92,22 @@ class ServiceItemListAdapter :
         super.submitList(list)
     }
 
-    class HeaderVH(
+    inner class HeaderVH(
         private val binding: ServicesListHeaderItemBinding,
     ) : RecyclerView.ViewHolder(binding.root) {
         fun bind() {
             binding.tvAll.setOnClickListener {
-                //TODO
+                listener.onServiceHeaderClicked()
             }
         }
     }
 
-    class ServiceOfferVH(
+    inner class ServiceOfferVH(
         private val binding: ServicesServiceOfferItemBinding,
     ) : RecyclerView.ViewHolder(binding.root) {
         fun bind() {
             binding.root.setOnClickListener {
-                //TODO
+                listener.onServiceOfferClicked()
             }
         }
     }
@@ -110,6 +122,9 @@ class ServiceItemListAdapter :
                 title.text = item.title
                 discountText.text = item.discountText
                 addressText.text = item.addressText
+                root.setOnClickListener {
+                    listener.onServiceItemClicked()
+                }
             }
         }
     }

@@ -2,29 +2,34 @@
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     tools:context=".ui.ServicesListActivity">
 
     <com.google.android.material.appbar.AppBarLayout
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        android:layout_height="235dp"
+        android:layout_width="match_parent">
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
-            android:layout_height="235dp"
+            android:layout_height="match_parent"
             android:layout_width="match_parent"
+            app:contentScrim="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
             app:titleEnabled="false">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_height="235dp"
-                android:layout_width="match_parent">
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                app:layout_collapseMode="parallax">
 
                 <ImageView
                     android:elevation="0dp"
+                    android:id="@+id/collapsingToolbarImage"
                     android:layout_height="match_parent"
-                    android:layout_width="match_parent" />
+                    android:layout_width="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@color/tealish" />
 
                 <ImageView
                     android:id="@+id/collapsingToolbarIcon"
@@ -34,15 +39,14 @@
                     android:src="@drawable/ic_logo_small"
                     app:layout_constraintBottom_toTopOf="@id/collapsingToolbarText"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintVertical_bias="" />
+                    app:layout_constraintStart_toStartOf="parent" />
 
                 <TextView
                     android:fontFamily="sans-serif"
                     android:gravity="center_horizontal"
                     android:id="@+id/collapsingToolbarText"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="45dp"
+                    android:layout_marginBottom="55dp"
                     android:layout_width="wrap_content"
                     android:lineSpacingExtra="8sp"
                     android:paddingHorizontal="50dp"
@@ -59,9 +63,10 @@
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 app:layout_collapseMode="pin"
-                app:title="@string/servicesList_toolbar_title_text" />
+                app:title="@string/servicesList_toolbar_title_text"
+                app:titleTextAppearance="@style/ServiceListToolbarTextAppearance"
+                app:titleTextColor="@color/white" />
         </com.google.android.material.appbar.CollapsingToolbarLayout>
-
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -69,9 +74,12 @@
         android:id="@+id/recyclerView"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
-        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        tools:listitem="@layout/services_list_item" />
 
     <androidx.viewpager2.widget.ViewPager2
-        android:layout_height="wrap_content"
+        android:layout_height="155dp"
         android:layout_width="match_parent" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -14,9 +14,20 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="Theme.Homework5.ServicesListNoTitleBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimaryVariant">@color/dark</item>
+    </style>
+
     <style name="ActivityLabelTextAppearance">
         <item name="android:textSize">25sp</item>
         <item name="android:textStyle">bold</item>
+        <item name="fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="ServiceListToolbarTextAppearance">
+        <item name="android:textSize">18sp</item>
         <item name="fontFamily">sans-serif-medium</item>
     </style>
 </resources>

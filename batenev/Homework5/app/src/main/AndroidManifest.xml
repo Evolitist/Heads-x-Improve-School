@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Homework5">
-        <activity android:name=".ui.ServicesListActivity"></activity>
+        <activity
+            android:name=".ui.ServicesListActivity"
+            android:theme="@style/Theme.Homework5.ServicesListNoTitleBar" />
         <activity android:name=".ui.FifthActivity" />
         <activity
             android:launchMode="singleTop"
