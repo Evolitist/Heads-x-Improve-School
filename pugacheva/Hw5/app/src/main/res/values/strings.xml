@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="go_to4">Go to 4</string>
+    <string name="go_to_2">Go to 2</string>
+    <string name="goto3">GoTo 3</string>
+    <string name="go_to_5">Go to 5</string>
+    <string name="go_to_1">Go to 1</string>
+    <string name="update">Обновить</string>
+    <string name="textAct5">Введите текст</string>
+    <string name="btnAct5">Deliver result</string>
+    <string name="save">Save</string>
+    <string name="textAct5_2">Введите текст</string>
+</resources>
