@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StatisticsItemView">
+        <attr name="viewType" format="enum">
+            <enum name="singleEditText" value="0" />
+            <enum name="tripleEditText" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>
