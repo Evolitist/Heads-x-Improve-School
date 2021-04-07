@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">homework_5_2</string>
+    <string name="description_image">Image</string>
+    <string name="title_appbar">Услуги управляющей компании будут \n доступны после сдачи дома</string>
+    <string name="header_services_title">Услуги</string>
+    <string name="header_services_subtitle">Все</string>
+    <string name="text_main_title_header">Предложить услугу</string>
+</resources>
