@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ListTile">
+        <attr name="image1" format="reference" />
+        <attr name="title" format="string" />
+        <attr name="serialNumber" format="string" />
+        <attr name="subtitle1" format="string" />
+        <attr name="subtitle2" format="string" />
+        <attr name="subtitle3" format="string" />
+        <attr name="alert" format="string" />
+        <attr name="showAlert" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ViewPagerTile">
+        <attr name="image" format="reference" />
+        <attr name="subtitle" format="string" />
+    </declare-styleable>
+</resources>
