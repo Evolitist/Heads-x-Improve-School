@@ -15,4 +15,9 @@
     <string name="statisticsItem_newMeasures_dayLabel">День</string>
     <string name="statisticsItem_newMeasures_nightLabel">Ночь</string>
     <string name="statisticsItem_newMeasures_peakLabel">Пик</string>
+
+    <string name="statisticsItem_measuresInfo_correctData">Показания сданы %1$s и будут учтены при следующем расчете %2$s</string>
+    <string name="statisticsItem_measuresInfo_warning">Необходимо подать показания до %1$s</string>
+    <string name="fragmentFourth_button_hideBanner_text">Свернуть баннер</string>
+    <string name="fragmentFourth_pagerPosition_text">Картинка %1$d</string>
 </resources>

@@ -7,8 +7,10 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupWithNavController
 import com.example.homework6.R
 import com.example.homework6.databinding.ActivityMainBinding
+import com.example.homework6.ui.common.OnViewPagerItemClickedListener
+import com.google.android.material.snackbar.Snackbar
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), OnViewPagerItemClickedListener {
 
     private lateinit var binding: ActivityMainBinding
 
@@ -24,14 +26,27 @@ class MainActivity : AppCompatActivity() {
             setOf(
                 R.id.firstFragment,
                 R.id.secondFragment,
-                R.id.thirdFragment
+                R.id.thirdFragment,
+                R.id.fourthFragment
             )
         )
 
         binding.bottomNavigationView.setupWithNavController(navController)
         binding.toolbar.setupWithNavController(navController, appBarConfig)
 
+
+
         setSupportActionBar(binding.toolbar)
         setContentView(binding.root)
+    }
+
+    override fun onItemClicked(text: String) {
+        Snackbar.make(
+            binding.root,
+            text,
+            Snackbar.LENGTH_SHORT
+        ).apply {
+            animationMode = Snackbar.ANIMATION_MODE_SLIDE
+        }.show()
     }
 }

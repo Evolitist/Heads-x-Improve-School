@@ -12,11 +12,11 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">@color/dark</item>
         <!-- Customize your theme here. -->
-        <item name="android:background">@color/pale_grey</item>
     </style>
 
     <style name="Theme.Homework6.Toolbar">
         <item name="android:textColorPrimary">@color/charcoal_grey</item>
         <item name="android:textColorSecondary">@color/charcoal_grey</item>
+        <item name="android:backgroundTint">@color/white</item>
     </style>
 </resources>
