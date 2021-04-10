@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="24dp"
+                app:layout_constraintBottom_toTopOf="@+id/textViewHintEditText"
+                app:layout_constraintRight_toLeftOf="@+id/textViewTitleTile"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/ic_water_cold" />
+
+            <TextView
+                android:id="@+id/textViewTitleTile"
+                style="@style/TextAppearance.AppCompat.testNavigation.TextTileMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:text="Холодная вода"
+                app:layout_constraintBottom_toTopOf="@+id/textViewId"
+                app:layout_constraintRight_toLeftOf="@+id/imageButtonInfo"
+                app:layout_constraintStart_toEndOf="@+id/imageViewMain"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="spread_inside" />
+
+            <TextView
+                android:id="@+id/textViewId"
+                style="@style/TextAppearance.AppCompat.testNavigation.TextTileId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="20dp"
+                android:text="54656553"
+                app:layout_constraintBottom_toTopOf="@+id/textViewHintEditText"
+                app:layout_constraintEnd_toStartOf="@+id/imageButtonInfo"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toEndOf="@+id/imageViewShortCode"
+                app:layout_constraintTop_toBottomOf="@+id/textViewTitleTile" />
+
+            <ImageView
+                android:id="@+id/imageViewShortCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="17dp"
+                android:src="@drawable/ic_serial_number"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewId"
+                app:layout_constraintRight_toLeftOf="@+id/textViewId"
+                app:layout_constraintStart_toEndOf="@+id/imageViewMain"
+                app:layout_constraintTop_toTopOf="@+id/textViewId" />
+
+            <ImageButton
+                android:id="@+id/imageButtonInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="#FFFFFF"
+                android:src="@drawable/ic_baseline_info_24"
+                app:layout_constraintBottom_toBottomOf="@+id/imageButtonMore"
+                app:layout_constraintEnd_toStartOf="@+id/imageButtonMore"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toEndOf="@+id/textViewTitleTile"
+                app:layout_constraintTop_toTopOf="@+id/imageButtonMore" />
+
+            <ImageButton
+                android:id="@+id/imageButtonMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:background="#FFFFFF"
+                android:src="@drawable/ic_baseline_more_vert_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/imageButtonInfo"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imageButtonCornerCard"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="44dp"
+                android:backgroundTint="#32C7CD"
+                app:cardCornerRadius="2dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toEndOf="@+id/editTextInputData"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonMore"
+                app:layout_constraintVertical_bias="1">
+
+                <ImageButton
+                    android:id="@+id/imageButtonSend"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#32C7CD"
+                    android:src="@drawable/ic_send" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textViewHintEditText"
+                style="@style/TextAppearance.AppCompat.testNavigation.TextTileSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="17dp"
+                android:text="Новые показания"
+                app:layout_constraintBottom_toTopOf="@+id/editTextInputData"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewId" />
+
+            <EditText
+                android:id="@+id/editTextInputData"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="22dp"
+                android:backgroundTint="#c2c1c7"
+                android:hint="35"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/textViewWarning"
+                app:layout_constraintEnd_toStartOf="@+id/imageButtonCornerCard"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewHintEditText" />
+
+            <TextView
+                android:id="@+id/textViewWarning"
+                style="@style/TextAppearance.AppCompat.testNavigation.TextTileAlert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginBottom="21dp"
+                android:text="Необходимо подать показания до 25.03.18"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageButtonCornerCard"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toEndOf="@+id/imageViewWarning"
+                app:layout_constraintTop_toBottomOf="@+id/editTextInputData" />
+
+            <ImageView
+                android:id="@+id/imageViewWarning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_alert"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewWarning"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textViewWarning" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
