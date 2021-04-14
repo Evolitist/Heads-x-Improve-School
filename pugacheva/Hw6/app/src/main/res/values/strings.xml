@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Hw6</string>
+    <string name="item_one">Item one</string>
+    <string name="item_two">Item two</string>
+    <string name="item_three">Item three</string>
+    <string name="search">Search</string>
+    <string name="menu">Menu</string>
+    <string name="lamp">Lamp</string>
+    <string name="show_banner">Показать баннер</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="fr_1">Фрагмент 1</string>
+    <string name="img_1">Картинка 1</string>
+    <string name="img_3">Картинка 3</string>
+    <string name="img_2">Картинка 2</string>
+    <string name="cold_water">Холодная вода</string>
+    <string name="hot_water">Горячая вода</string>
+    <string name="electric">Электроэнергия</string>
+</resources>
