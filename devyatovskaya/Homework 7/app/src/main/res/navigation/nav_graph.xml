@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/SmallShipFragment">
+
+    <fragment
+        android:id="@+id/SmallShipFragment"
+        android:name="com.example.task8.ui.main.Fragments.SmallShipFragment"
+        android:label="SmallShipFragment" >
+        <action
+            android:id="@+id/action_SmallShipFragment_to_FullShipFragment"
+            app:destination="@id/FullShipFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SmallFilmFragment"
+        android:name="com.example.task8.ui.main.Fragments.SmallFilmFragment"
+        android:label="SmallFilmFragment" >
+        <action
+            android:id="@+id/action_SmallFilmFragment_to_FullFilmFragment"
+            app:destination="@id/FullFilmFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SmallPlanetFragment"
+        android:name="com.example.task8.ui.main.Fragments.SmallPlanetFragment"
+        android:label="SmallPlanetFragment" >
+        <action
+            android:id="@+id/action_SmallPlanetFragment_to_FullPlanetFragment"
+            app:destination="@id/FullPlanetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/FullShipFragment"
+        android:name="com.example.task8.ui.main.Fragments.FullShipFragment"
+        android:label="FullShipFragment" >
+        <argument
+            android:name="starship"
+            app:argType="com.example.task8.network.StarShips.StarShipApiModel" />
+    </fragment>
+    <fragment
+        android:id="@+id/FullFilmFragment"
+        android:name="com.example.task8.ui.main.Fragments.FullFilmFragment"
+        android:label="FullFilmFragment" >
+        <argument
+            android:name="film"
+            app:argType="com.example.task8.network.films.FilmApiModel" />
+    </fragment>
+    <fragment
+        android:id="@+id/FullPlanetFragment"
+        android:name="com.example.task8.ui.main.Fragments.FullPlanetFragment"
+        android:label="FullPlanetFragment" >
+        <argument
+            android:name="planet"
+            app:argType="com.example.task8.network.Planets.PlanetApiModel" />
+    </fragment>
+</navigation>
