@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pale_grey"
+    android:clickable="true"
+    android:focusable="true">
+
+  <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="16dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:ellipsize="end"
+      android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@+id/constName"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:text="Name 1" />
+
+  <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/model"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="16dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:ellipsize="end"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@+id/constModel"
+      app:layout_constraintTop_toBottomOf="@+id/name"
+      tools:text="Model 1" />
+
+  <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/constName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:text="Name"
+      android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/constModel"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:text="Model"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/constName" />
+
+  <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/starShipClass"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="16dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:ellipsize="end"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@+id/constClass"
+      app:layout_constraintTop_toBottomOf="@+id/model"
+      tools:text="Starship Class" />
+
+  <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/manufacturer"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="16dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:ellipsize="end"
+      android:ems="16"
+      android:autoSizeTextType="uniform"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@+id/constManufacturer"
+      app:layout_constraintTop_toBottomOf="@+id/starShipClass"
+      tools:text="Manufacturer" />
+
+  <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/constClass"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:text="StarShipClass"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/constModel" />
+
+  <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/constManufacturer"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:text="Manufacturer"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/constClass" />
+
+  <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/constCost"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="32dp"
+      android:text="Cost in credits"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/constManufacturer" />
+
+  <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/cost"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="16dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="32dp"
+      android:layout_marginEnd="16dp"
+      android:ellipsize="end"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@+id/constCost"
+      app:layout_constraintTop_toTopOf="@+id/manufacturer"
+      tools:text="cost" />
+
+  <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/constLength"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:text="Length"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/constCost" />
+
+  <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/length"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="16dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:ellipsize="end"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@+id/constLength"
+      app:layout_constraintTop_toBottomOf="@+id/cost"
+      tools:text="length" />
+
+  <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/constCrew"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:text="Crew"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/constLength" />
+
+  <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/crew"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="16dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:ellipsize="end"
+      android:autoSizeTextType="uniform"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@+id/constCrew"
+      app:layout_constraintTop_toBottomOf="@+id/length"
+      tools:text="crew" />
+
+  <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/constPassengers"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:text="Passengers"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/constCrew" />
+
+  <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/passengers"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="16dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:ellipsize="end"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@+id/constPassengers"
+      app:layout_constraintTop_toBottomOf="@+id/crew"
+      tools:text="passengers" />
+
+  <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/constSpeed"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:text="Max atmosphere speed"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/constPassengers" />
+
+  <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/speed"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="16dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:ellipsize="end"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@+id/constSpeed"
+      app:layout_constraintTop_toBottomOf="@+id/passengers"
+      tools:text="speed" />
+
+  <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/constRating"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:text="Hyperdrive rating"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/constSpeed" />
+
+  <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/rating"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="16dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:ellipsize="end"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@+id/constRating"
+      app:layout_constraintTop_toBottomOf="@+id/speed"
+      tools:text="rating" />
+
+  <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/constMGLT"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:text="Hyperdrive rating"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/constRating" />
+
+  <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/mglt"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="16dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:ellipsize="end"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@+id/constMGLT"
+      app:layout_constraintTop_toBottomOf="@+id/rating"
+      tools:text="mglt" />
+
+  <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/constCapacity"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:text="Cargo capacity"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/constMGLT" />
+
+  <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/capacity"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="16dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:ellipsize="end"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@+id/constCapacity"
+      app:layout_constraintTop_toBottomOf="@+id/mglt"
+      tools:text="capacity" />
+
+  <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/constConsumables"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:text="Consumables"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/constCapacity"
+      app:layout_constraintVertical_bias="0.0" />
+
+  <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/consumables"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="16dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:ellipsize="end"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@+id/constConsumables"
+      app:layout_constraintTop_toBottomOf="@+id/capacity"
+      app:layout_constraintVertical_bias="0.0"
+      tools:text="consumables" />
+</androidx.constraintlayout.widget.ConstraintLayout>
