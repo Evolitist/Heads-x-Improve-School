@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/firstFragment">
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.example.homework_8.ui.FirstFragment"
+        android:label="Starships"
+        tools:layout="@layout/fragment_first">
+        <action
+            android:id="@+id/action_firstFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_starshipFragment"
+            app:destination="@id/starshipFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.example.homework_8.ui.SecondFragment"
+        android:label="Planets"
+        tools:layout="@layout/fragment_second">
+        <action
+            android:id="@+id/action_secondFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_planetFragment"
+            app:destination="@id/planetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.example.homework_8.ui.ThirdFragment"
+        android:label="People"
+        tools:layout="@layout/fragment_third">
+        <action
+            android:id="@+id/action_thirdFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_humanFragment"
+            app:destination="@id/humanFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/starshipFragment"
+        android:name="com.example.homework_8.ui.aditional.StarshipFragment"
+        android:label="Starship"
+        tools:layout="@layout/fragment_starship">
+        <action
+            android:id="@+id/action_starshipFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/planetFragment"
+        android:name="com.example.homework_8.ui.aditional.PlanetFragment"
+        android:label="Planet"
+        tools:layout="@layout/fragment_planet">
+        <action
+            android:id="@+id/action_planetFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/humanFragment"
+        android:name="com.example.homework_8.ui.aditional.HumanFragment"
+        android:label="Human"
+        tools:layout="@layout/fragment_human">
+        <action
+            android:id="@+id/action_humanFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+    </fragment>
+</navigation>
