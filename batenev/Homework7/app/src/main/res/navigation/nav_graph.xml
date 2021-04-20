@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_planets">
+
+    <fragment
+        android:id="@+id/navigation_planets"
+        android:name="com.example.homework7.ui.planets.PlanetsFragment"
+        android:label="@string/planets_title"
+        tools:layout="@layout/fragment_planets" >
+        <action
+            android:id="@+id/action_navigation_planets_to_navigation_species"
+            app:destination="@id/navigation_species" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_species"
+        android:name="com.example.homework7.ui.species.SpeciesFragment"
+        android:label="@string/species_title"
+        tools:layout="@layout/fragment_species" >
+        <action
+            android:id="@+id/action_navigation_species_to_navigation_spaceships"
+            app:destination="@id/navigation_spaceships" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_spaceships"
+        android:name="com.example.homework7.ui.starships.StarshipsFragment"
+        android:label="@string/spaceships_title"
+        tools:layout="@layout/fragment_starships" />
+</navigation>
