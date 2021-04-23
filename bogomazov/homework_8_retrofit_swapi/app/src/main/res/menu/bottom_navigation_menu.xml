@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@id/mainFragment"
+        android:icon="@drawable/ic_spaceship"
+        android:title="Starship" />
+    <item
+        android:id="@id/fragmentVehicles"
+        android:icon="@drawable/ic_walker"
+        android:title="Vehicles" />
+    <item
+        android:id="@id/fragmentPlanets"
+        android:icon="@drawable/ic_planet"
+        android:title="Planets" />
+</menu>
