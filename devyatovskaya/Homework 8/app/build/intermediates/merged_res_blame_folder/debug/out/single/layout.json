@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "/home/alex/AndroidSchool/Task8/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/small_film_item.xml",
+        "source": "/home/alex/AndroidSchool/Task8/app/src/main/res/layout/small_film_item.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidSchool/Task8/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/small_ship_item.xml",
+        "source": "/home/alex/AndroidSchool/Task8/app/src/main/res/layout/small_ship_item.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidSchool/Task8/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/main_activity.xml",
+        "source": "/home/alex/AndroidSchool/Task8/app/src/main/res/layout/main_activity.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidSchool/Task8/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/full_planet_item.xml",
+        "source": "/home/alex/AndroidSchool/Task8/app/src/main/res/layout/full_planet_item.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidSchool/Task8/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/detail_fragment.xml",
+        "source": "/home/alex/AndroidSchool/Task8/app/src/main/res/layout/detail_fragment.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidSchool/Task8/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/full_film_item.xml",
+        "source": "/home/alex/AndroidSchool/Task8/app/src/main/res/layout/full_film_item.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidSchool/Task8/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/full_ship_item.xml",
+        "source": "/home/alex/AndroidSchool/Task8/app/src/main/res/layout/full_ship_item.xml"
+    },
+    {
+        "merged": "/home/alex/AndroidSchool/Task8/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/small_planet_item.xml",
+        "source": "/home/alex/AndroidSchool/Task8/app/src/main/res/layout/small_planet_item.xml"
+    }
+]

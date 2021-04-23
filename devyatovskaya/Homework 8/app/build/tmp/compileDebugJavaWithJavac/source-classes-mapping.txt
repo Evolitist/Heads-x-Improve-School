@@ -1,0 +1,181 @@
+com/example/task8/ui/main/ViewModels/PlanetViewModel_HiltModules_KeyModule_ProvideFactory.java
+ com.example.task8.ui.main.ViewModels.PlanetViewModel_HiltModules_KeyModule_ProvideFactory
+ com.example.task8.ui.main.ViewModels.PlanetViewModel_HiltModules_KeyModule_ProvideFactory$InstanceHolder
+com/example/task8/DaggerApp_HiltComponents_SingletonC.java
+ com.example.task8.DaggerApp_HiltComponents_SingletonC
+ com.example.task8.DaggerApp_HiltComponents_SingletonC$1
+ com.example.task8.DaggerApp_HiltComponents_SingletonC$ActivityRetainedCBuilder
+ com.example.task8.DaggerApp_HiltComponents_SingletonC$ActivityRetainedCImpl
+ com.example.task8.DaggerApp_HiltComponents_SingletonC$ActivityRetainedCImpl$ActivityCBuilder
+ com.example.task8.DaggerApp_HiltComponents_SingletonC$ActivityRetainedCImpl$ActivityCImpl
+ com.example.task8.DaggerApp_HiltComponents_SingletonC$ActivityRetainedCImpl$ActivityCImpl$FragmentCBuilder
+ com.example.task8.DaggerApp_HiltComponents_SingletonC$ActivityRetainedCImpl$ActivityCImpl$FragmentCImpl
+ com.example.task8.DaggerApp_HiltComponents_SingletonC$ActivityRetainedCImpl$ActivityCImpl$FragmentCImpl$ViewWithFragmentCBuilder
+ com.example.task8.DaggerApp_HiltComponents_SingletonC$ActivityRetainedCImpl$ActivityCImpl$FragmentCImpl$ViewWithFragmentCImpl
+ com.example.task8.DaggerApp_HiltComponents_SingletonC$ActivityRetainedCImpl$ActivityCImpl$ViewCBuilder
+ com.example.task8.DaggerApp_HiltComponents_SingletonC$ActivityRetainedCImpl$ActivityCImpl$ViewCImpl
+ com.example.task8.DaggerApp_HiltComponents_SingletonC$ActivityRetainedCImpl$ViewModelCBuilder
+ com.example.task8.DaggerApp_HiltComponents_SingletonC$ActivityRetainedCImpl$ViewModelCImpl
+ com.example.task8.DaggerApp_HiltComponents_SingletonC$ActivityRetainedCImpl$ViewModelCImpl$SwitchingProvider
+ com.example.task8.DaggerApp_HiltComponents_SingletonC$Builder
+ com.example.task8.DaggerApp_HiltComponents_SingletonC$ServiceCBuilder
+ com.example.task8.DaggerApp_HiltComponents_SingletonC$ServiceCImpl
+com/example/task8/BuildConfig.java
+ com.example.task8.BuildConfig
+com/example/task8/databinding/MainActivityBinding.java
+ com.example.task8.databinding.MainActivityBinding
+hilt_aggregated_deps/com_example_task8_ui_main_Fragments_FullFilmFragment_GeneratedInjectorModuleDeps.java
+ hilt_aggregated_deps.com_example_task8_ui_main_Fragments_FullFilmFragment_GeneratedInjectorModuleDeps
+com/example/task8/ui/main/ViewModels/ShipsViewModel_HiltModules.java
+ com.example.task8.ui.main.ViewModels.ShipsViewModel_HiltModules
+ com.example.task8.ui.main.ViewModels.ShipsViewModel_HiltModules$BindsModule
+ com.example.task8.ui.main.ViewModels.ShipsViewModel_HiltModules$KeyModule
+com/example/task8/databinding/SmallFilmItemBinding.java
+ com.example.task8.databinding.SmallFilmItemBinding
+hilt_aggregated_deps/com_example_task8_ui_main_ViewModels_FilmsViewModel_HiltModules_KeyModuleModuleDeps.java
+ hilt_aggregated_deps.com_example_task8_ui_main_ViewModels_FilmsViewModel_HiltModules_KeyModuleModuleDeps
+com/example/task8/db/SWDao_Impl.java
+ com.example.task8.db.SWDao_Impl
+ com.example.task8.db.SWDao_Impl$1
+ com.example.task8.db.SWDao_Impl$10
+ com.example.task8.db.SWDao_Impl$11
+ com.example.task8.db.SWDao_Impl$12
+ com.example.task8.db.SWDao_Impl$13
+ com.example.task8.db.SWDao_Impl$14
+ com.example.task8.db.SWDao_Impl$15
+ com.example.task8.db.SWDao_Impl$2
+ com.example.task8.db.SWDao_Impl$3
+ com.example.task8.db.SWDao_Impl$4
+ com.example.task8.db.SWDao_Impl$5
+ com.example.task8.db.SWDao_Impl$6
+ com.example.task8.db.SWDao_Impl$7
+ com.example.task8.db.SWDao_Impl$8
+ com.example.task8.db.SWDao_Impl$9
+com/example/task8/ui/main/ViewModels/PlanetViewModel_HiltModules.java
+ com.example.task8.ui.main.ViewModels.PlanetViewModel_HiltModules
+ com.example.task8.ui.main.ViewModels.PlanetViewModel_HiltModules$BindsModule
+ com.example.task8.ui.main.ViewModels.PlanetViewModel_HiltModules$KeyModule
+com/example/task8/ui/main/Fragments/Hilt_FullShipFragment.java
+ com.example.task8.ui.main.Fragments.Hilt_FullShipFragment
+com/example/task8/ui/main/Fragments/Hilt_SmallShipFragment.java
+ com.example.task8.ui.main.Fragments.Hilt_SmallShipFragment
+com/example/task8/ui/main/ViewModels/FilmsViewModel_HiltModules.java
+ com.example.task8.ui.main.ViewModels.FilmsViewModel_HiltModules
+ com.example.task8.ui.main.ViewModels.FilmsViewModel_HiltModules$BindsModule
+ com.example.task8.ui.main.ViewModels.FilmsViewModel_HiltModules$KeyModule
+com/example/task8/ui/main/Fragments/FullFilmFragment_GeneratedInjector.java
+ com.example.task8.ui.main.Fragments.FullFilmFragment_GeneratedInjector
+com/example/task8/ui/main/ViewModels/PlanetViewModel_Factory.java
+ com.example.task8.ui.main.ViewModels.PlanetViewModel_Factory
+hilt_aggregated_deps/com_example_task8_ui_main_ViewModels_ShipsViewModel_HiltModules_KeyModuleModuleDeps.java
+ hilt_aggregated_deps.com_example_task8_ui_main_ViewModels_ShipsViewModel_HiltModules_KeyModuleModuleDeps
+com/example/task8/ui/main/ViewModels/ShipsViewModel_Factory.java
+ com.example.task8.ui.main.ViewModels.ShipsViewModel_Factory
+com/example/task8/databinding/SmallShipItemBinding.java
+ com.example.task8.databinding.SmallShipItemBinding
+com/example/task8/databinding/FullFilmItemBinding.java
+ com.example.task8.databinding.FullFilmItemBinding
+com/example/task8/ui/main/Fragments/Hilt_SmallFilmFragment.java
+ com.example.task8.ui.main.Fragments.Hilt_SmallFilmFragment
+com/example/task8/ui/main/Fragments/Hilt_FullFilmFragment.java
+ com.example.task8.ui.main.Fragments.Hilt_FullFilmFragment
+com/example/task8/App_GeneratedInjector.java
+ com.example.task8.App_GeneratedInjector
+hilt_aggregated_deps/com_example_task8_ui_main_Fragments_SmallFilmFragment_GeneratedInjectorModuleDeps.java
+ hilt_aggregated_deps.com_example_task8_ui_main_Fragments_SmallFilmFragment_GeneratedInjectorModuleDeps
+com/example/task8/di/ApiServiceModule_ProvideApiServiceFactory.java
+ com.example.task8.di.ApiServiceModule_ProvideApiServiceFactory
+com/example/task8/di/ApiServiceModule_ProvideRetrofitFactory.java
+ com.example.task8.di.ApiServiceModule_ProvideRetrofitFactory
+ com.example.task8.di.ApiServiceModule_ProvideRetrofitFactory$InstanceHolder
+com/example/task8/databinding/SmallPlanetItemBinding.java
+ com.example.task8.databinding.SmallPlanetItemBinding
+hilt_aggregated_deps/com_example_task8_ui_main_Fragments_SmallShipFragment_GeneratedInjectorModuleDeps.java
+ hilt_aggregated_deps.com_example_task8_ui_main_Fragments_SmallShipFragment_GeneratedInjectorModuleDeps
+hilt_aggregated_deps/com_example_task8_ui_main_ViewModels_FilmsViewModel_HiltModules_BindsModuleModuleDeps.java
+ hilt_aggregated_deps.com_example_task8_ui_main_ViewModels_FilmsViewModel_HiltModules_BindsModuleModuleDeps
+com/example/task8/ui/main/Fragments/FullPlanetFragment_GeneratedInjector.java
+ com.example.task8.ui.main.Fragments.FullPlanetFragment_GeneratedInjector
+hilt_aggregated_deps/com_example_task8_di_ApiServiceModuleModuleDeps.java
+ hilt_aggregated_deps.com_example_task8_di_ApiServiceModuleModuleDeps
+com/example/task8/databinding/FullShipItemBinding.java
+ com.example.task8.databinding.FullShipItemBinding
+com/example/task8/ui/main/Fragments/SmallShipFragment_GeneratedInjector.java
+ com.example.task8.ui.main.Fragments.SmallShipFragment_GeneratedInjector
+hilt_aggregated_deps/com_example_task8_di_DatabaseModuleModuleDeps.java
+ hilt_aggregated_deps.com_example_task8_di_DatabaseModuleModuleDeps
+hilt_aggregated_deps/com_example_task8_ui_main_ViewModels_ShipsViewModel_HiltModules_BindsModuleModuleDeps.java
+ hilt_aggregated_deps.com_example_task8_ui_main_ViewModels_ShipsViewModel_HiltModules_BindsModuleModuleDeps
+hilt_aggregated_deps/com_example_task8_ui_main_Fragments_FullPlanetFragment_GeneratedInjectorModuleDeps.java
+ hilt_aggregated_deps.com_example_task8_ui_main_Fragments_FullPlanetFragment_GeneratedInjectorModuleDeps
+com/example/task8/Hilt_App.java
+ com.example.task8.Hilt_App
+ com.example.task8.Hilt_App$1
+com/example/task8/di/DatabaseModule_ProvideDatabaseFactory.java
+ com.example.task8.di.DatabaseModule_ProvideDatabaseFactory
+hilt_aggregated_deps/com_example_task8_ui_main_Fragments_SmallPlanetFragment_GeneratedInjectorModuleDeps.java
+ hilt_aggregated_deps.com_example_task8_ui_main_Fragments_SmallPlanetFragment_GeneratedInjectorModuleDeps
+hilt_aggregated_deps/com_example_task8_App_GeneratedInjectorModuleDeps.java
+ hilt_aggregated_deps.com_example_task8_App_GeneratedInjectorModuleDeps
+com/example/task8/App_HiltComponents.java
+ com.example.task8.App_HiltComponents
+ com.example.task8.App_HiltComponents$ActivityC
+ com.example.task8.App_HiltComponents$ActivityC$Builder
+ com.example.task8.App_HiltComponents$ActivityCBuilderModule
+ com.example.task8.App_HiltComponents$ActivityRetainedC
+ com.example.task8.App_HiltComponents$ActivityRetainedC$Builder
+ com.example.task8.App_HiltComponents$ActivityRetainedCBuilderModule
+ com.example.task8.App_HiltComponents$FragmentC
+ com.example.task8.App_HiltComponents$FragmentC$Builder
+ com.example.task8.App_HiltComponents$FragmentCBuilderModule
+ com.example.task8.App_HiltComponents$ServiceC
+ com.example.task8.App_HiltComponents$ServiceC$Builder
+ com.example.task8.App_HiltComponents$ServiceCBuilderModule
+ com.example.task8.App_HiltComponents$SingletonC
+ com.example.task8.App_HiltComponents$ViewC
+ com.example.task8.App_HiltComponents$ViewC$Builder
+ com.example.task8.App_HiltComponents$ViewCBuilderModule
+ com.example.task8.App_HiltComponents$ViewModelC
+ com.example.task8.App_HiltComponents$ViewModelC$Builder
+ com.example.task8.App_HiltComponents$ViewModelCBuilderModule
+ com.example.task8.App_HiltComponents$ViewWithFragmentC
+ com.example.task8.App_HiltComponents$ViewWithFragmentC$Builder
+ com.example.task8.App_HiltComponents$ViewWithFragmentCBuilderModule
+hilt_aggregated_deps/com_example_task8_ui_main_Fragments_FullShipFragment_GeneratedInjectorModuleDeps.java
+ hilt_aggregated_deps.com_example_task8_ui_main_Fragments_FullShipFragment_GeneratedInjectorModuleDeps
+hilt_aggregated_deps/com_example_task8_ui_main_ViewModels_PlanetViewModel_HiltModules_BindsModuleModuleDeps.java
+ hilt_aggregated_deps.com_example_task8_ui_main_ViewModels_PlanetViewModel_HiltModules_BindsModuleModuleDeps
+com/example/task8/ui/main/ViewModels/FilmsViewModel_Factory.java
+ com.example.task8.ui.main.ViewModels.FilmsViewModel_Factory
+com/example/task8/db/SwDatabase_Impl.java
+ com.example.task8.db.SwDatabase_Impl
+ com.example.task8.db.SwDatabase_Impl$1
+hilt_aggregated_deps/com_example_task8_ui_main_ViewModels_PlanetViewModel_HiltModules_KeyModuleModuleDeps.java
+ hilt_aggregated_deps.com_example_task8_ui_main_ViewModels_PlanetViewModel_HiltModules_KeyModuleModuleDeps
+hilt_aggregated_deps/com_example_task8_MainActivity_GeneratedInjectorModuleDeps.java
+ hilt_aggregated_deps.com_example_task8_MainActivity_GeneratedInjectorModuleDeps
+com/example/task8/ui/main/Fragments/SmallFilmFragment_GeneratedInjector.java
+ com.example.task8.ui.main.Fragments.SmallFilmFragment_GeneratedInjector
+com/example/task8/ui/main/ViewModels/ShipsViewModel_HiltModules_KeyModule_ProvideFactory.java
+ com.example.task8.ui.main.ViewModels.ShipsViewModel_HiltModules_KeyModule_ProvideFactory
+ com.example.task8.ui.main.ViewModels.ShipsViewModel_HiltModules_KeyModule_ProvideFactory$InstanceHolder
+com/example/task8/databinding/FullPlanetItemBinding.java
+ com.example.task8.databinding.FullPlanetItemBinding
+com/example/task8/databinding/DetailFragmentBinding.java
+ com.example.task8.databinding.DetailFragmentBinding
+com/example/task8/ui/main/Fragments/FullShipFragment_GeneratedInjector.java
+ com.example.task8.ui.main.Fragments.FullShipFragment_GeneratedInjector
+com/example/task8/ui/main/Fragments/SmallPlanetFragment_GeneratedInjector.java
+ com.example.task8.ui.main.Fragments.SmallPlanetFragment_GeneratedInjector
+com/example/task8/ui/main/Fragments/Hilt_FullPlanetFragment.java
+ com.example.task8.ui.main.Fragments.Hilt_FullPlanetFragment
+com/example/task8/ui/main/ViewModels/FilmsViewModel_HiltModules_KeyModule_ProvideFactory.java
+ com.example.task8.ui.main.ViewModels.FilmsViewModel_HiltModules_KeyModule_ProvideFactory
+ com.example.task8.ui.main.ViewModels.FilmsViewModel_HiltModules_KeyModule_ProvideFactory$InstanceHolder
+com/example/task8/ui/main/Fragments/Hilt_SmallPlanetFragment.java
+ com.example.task8.ui.main.Fragments.Hilt_SmallPlanetFragment
+com/example/task8/MainActivity_GeneratedInjector.java
+ com.example.task8.MainActivity_GeneratedInjector
+com/example/task8/Hilt_MainActivity.java
+ com.example.task8.Hilt_MainActivity
+ com.example.task8.Hilt_MainActivity$1

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">hw6</string>
+    <string name="title_item_one">Item one</string>
+    <string name="title_item_two">Item two</string>
+    <string name="title_item_three">Item three</string>
+    <string name="search">Search</string>
+    <string name="more">More</string>
+    <string name="fragment_one">Фрагмент 1</string>
+    <string name="light">Light</string>
+    <string name="show_banner">Показать баннер</string>
+    <string name="close_banner">Свернуть баннер</string>
+    <string name="textImage">Картинка %1d</string>
+</resources>
