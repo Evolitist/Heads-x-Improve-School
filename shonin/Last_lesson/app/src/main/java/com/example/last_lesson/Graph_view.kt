@@ -196,25 +196,26 @@ class Graph_view @JvmOverloads constructor(
                         idd = j
                     }
                 }
-
-                when (event.action and MotionEvent.ACTION_MASK) {
-                    MotionEvent.ACTION_DOWN -> {
-                        val yy = (size / 2f - y) / (size / 2f)
-                        //Log.d("dbbd", yy.toString() +" 1")
-                        listt[idd] = yy
-                        listHeightCalc()
-                        invalidate()
-                        performClick()
-                        return true
-                    }
-                    MotionEvent.ACTION_MOVE -> {
-                        val yy = (size / 2f - y) / (size / 2f)
-                        //Log.d("dbbd", yy.toString() + " 2")
-                        listt[idd] = yy
-                        listHeightCalc()
-                        invalidate()
-                        performClick()
-                        return true
+                if (y < size) {
+                    when (event.action and MotionEvent.ACTION_MASK) {
+                        MotionEvent.ACTION_DOWN -> {
+                            val yy = (size / 2f - y) / (size / 2f)
+                            //Log.d("dbbd", yy.toString() +" 1")
+                            listt[idd] = yy
+                            listHeightCalc()
+                            invalidate()
+                            performClick()
+                            return true
+                        }
+                        MotionEvent.ACTION_MOVE -> {
+                            val yy = (size / 2f - y) / (size / 2f)
+                            //Log.d("dbbd", yy.toString() + " 2")
+                            listt[idd] = yy
+                            listHeightCalc()
+                            invalidate()
+                            performClick()
+                            return true
+                        }
                     }
                 }
             }
