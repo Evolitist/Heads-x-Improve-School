@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Homework6</string>
+    <string name="bottomNavigation_itemOne_title">Item one</string>
+    <string name="bottomNavigation_itemTwo_title">Item two</string>
+    <string name="bottomNavigation_itemThree_title">Item three</string>
+    <string name="toolbar_search_title">Search</string>
+    <string name="toolbar_first_title">First</string>
+    <string name="toolbar_second_title">Second</string>
+    <string name="toolbar_third_title">Third</string>
+    <string name="toolbar_highlight_title">Highlight</string>
+    <string name="fragmentFirst_label_text">Фрагмент 1</string>
+    <string name="fragmentThird_button_showBanner_text">Показать баннер</string>
+    <string name="statisticsItem_newMeasures_label">Новые показания</string>
+    <string name="statisticsItem_newMeasures_hint">35</string>
+    <string name="statisticsItem_newMeasures_dayLabel">День</string>
+    <string name="statisticsItem_newMeasures_nightLabel">Ночь</string>
+    <string name="statisticsItem_newMeasures_peakLabel">Пик</string>
+
+    <string name="statisticsItem_measuresInfo_correctData">Показания сданы %1$s и будут учтены при следующем расчете %2$s</string>
+    <string name="statisticsItem_measuresInfo_warning">Необходимо подать показания до %1$s</string>
+    <string name="fragmentFourth_button_hideBanner_text">Свернуть баннер</string>
+    <string name="fragmentFourth_pagerPosition_text">Картинка %1$d</string>
+</resources>

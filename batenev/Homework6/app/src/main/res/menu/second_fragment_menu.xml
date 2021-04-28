@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/secondFragment_menu_hightlight"
+        android:icon="@drawable/ic_lamp_26x16"
+        android:title="@string/toolbar_highlight_title"
+        app:showAsAction="ifRoom" />
+</menu>
