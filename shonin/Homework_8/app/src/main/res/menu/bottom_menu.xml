@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/firstFragment"
+        android:icon="@drawable/ic_baseline_airplanemode_active_24"
+        android:title="Starships" />
+    <item
+        android:id="@+id/secondFragment"
+        android:icon="@drawable/ic_baseline_star_border_24"
+        android:title="Planets" />
+    <item
+        android:id="@+id/thirdFragment"
+        android:icon="@drawable/ic_baseline_people_outline_24"
+        android:title="People" />
+</menu>
