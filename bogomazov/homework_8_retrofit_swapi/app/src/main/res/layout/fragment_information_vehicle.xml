@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.information.FragmentInformationVehicle">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/card_color_dark"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="8dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toTopOf="@+id/guideline7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textViewCharacteristicsHint"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/Image.Lesson_7.CornerRadiusAvatar"
+                app:srcCompat="@drawable/star_wars_logo" />
+
+            <TextView
+                android:id="@+id/textViewCharacteristicsHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Characteristics"
+                app:layout_constraintBottom_toTopOf="@+id/guideline7"
+                app:layout_constraintEnd_toStartOf="@+id/shapeableImageView"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewModelHintInformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Model:"
+                app:layout_constraintBottom_toTopOf="@+id/textViewManufacturerHintInformation"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline7" />
+
+            <TextView
+                android:id="@+id/textViewManufacturerHintInformation"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_marginStart="8dp"
+                android:text="Manufacturer:"
+                app:layout_constraintBottom_toTopOf="@+id/textViewCoastHintInformation"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewModelHintInformation" />
+
+            <TextView
+                android:id="@+id/textViewCoastHintInformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Cost in Credits:"
+                app:layout_constraintBottom_toTopOf="@+id/textViewLengthHintInformation"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewManufacturerHintInformation" />
+
+            <TextView
+                android:id="@+id/textViewLengthHintInformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Length:"
+                app:layout_constraintBottom_toTopOf="@+id/textViewCrewHintInformation"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewCoastHintInformation" />
+
+            <TextView
+                android:id="@+id/textViewCrewHintInformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Crew:"
+                app:layout_constraintBottom_toTopOf="@+id/textViewPassengersHintInformation"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLengthHintInformation" />
+
+            <TextView
+                android:id="@+id/textViewPassengersHintInformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Passengers"
+                app:layout_constraintBottom_toTopOf="@+id/textViewCargoCapacityHintInformation"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewCrewHintInformation" />
+
+            <TextView
+                android:id="@+id/textViewCargoCapacityHintInformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Cargo Capacity:"
+                app:layout_constraintBottom_toTopOf="@+id/textViewConsumablesHintInformation"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewPassengersHintInformation" />
+
+            <TextView
+                android:id="@+id/textViewConsumablesHintInformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Consumables:"
+                app:layout_constraintBottom_toTopOf="@+id/textViewVehiclesClassHintInformation"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewCargoCapacityHintInformation" />
+
+            <TextView
+                android:id="@+id/textViewVehiclesClassHintInformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Vehicles Class:"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewConsumablesHintInformation" />
+
+            <TextView
+                android:id="@+id/textViewModelInformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/textViewManufacturerInformation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/textViewModelHintInformation"
+                app:layout_constraintTop_toTopOf="@+id/guideline7"
+                app:layout_constraintVertical_chainStyle="spread"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/textViewManufacturerInformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:maxLines="1"
+                app:layout_constraintBottom_toTopOf="@+id/textViewCoastInformation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/textViewManufacturerHintInformation"
+                app:layout_constraintTop_toBottomOf="@+id/textViewModelInformation"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/textViewCoastInformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/textViewLengthInformation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/textViewCoastHintInformation"
+                app:layout_constraintTop_toBottomOf="@+id/textViewManufacturerInformation"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/textViewLengthInformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/textViewCrewInformation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/textViewLengthHintInformation"
+                app:layout_constraintTop_toBottomOf="@+id/textViewCoastInformation"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/textViewCrewInformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/textViewPassengersInformation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/textViewCrewHintInformation"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLengthInformation"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/textViewPassengersInformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/textViewCargoCapacityInformation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/textViewPassengersHintInformation"
+                app:layout_constraintTop_toBottomOf="@+id/textViewCrewInformation"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/textViewCargoCapacityInformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/textViewConsumablesInformation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/textViewCargoCapacityHintInformation"
+                app:layout_constraintTop_toBottomOf="@+id/textViewPassengersInformation"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/textViewConsumablesInformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/textViewVehiclesClassInformation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/textViewConsumablesHintInformation"
+                app:layout_constraintTop_toBottomOf="@+id/textViewCargoCapacityInformation"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/textViewVehiclesClassInformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/textViewVehiclesClassHintInformation"
+                app:layout_constraintTop_toBottomOf="@+id/textViewConsumablesInformation"
+                tools:text="TextView" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="56dp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
