@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lesson_9_Push_FB</string>
+    <string name="channel_name">Message channel</string>
+    <string name="channel_description">Response message</string>
+</resources>
