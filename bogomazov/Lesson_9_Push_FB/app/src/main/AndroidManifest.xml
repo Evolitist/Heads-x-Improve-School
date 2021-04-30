@@ -19,8 +19,6 @@
             </intent-filter>
         </activity>
 
-
-
         <service
             android:name=".FireBaseService"
             android:exported="false">
@@ -28,6 +26,10 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
+        <receiver
+            android:name=".BroadcastReceiverNotification"
+            android:enabled="true"
+            android:exported="false" />
     </application>
 
 </manifest>
