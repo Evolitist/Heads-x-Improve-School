@@ -19,4 +19,16 @@ data class SpeciesUiModel(
     fun getId(): Int {
         return url[url.length - 2].toInt()
     }
+
+    override fun toString(): String {
+        return "Name : $name \n" +
+                "Classification : $classification \n" +
+                "Designation : $designation \n" +
+                "Average Height : $averageHeight \n" +
+                "Skin Colors : $skinColors \n" +
+                "Hair Colors : $hairColors \n" +
+                "Eye Colors : $eyeColors \n" +
+                "Average Lifespan : $averageLifespan \n" +
+                "Language : $language \n"
+    }
 }

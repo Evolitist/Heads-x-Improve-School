@@ -19,4 +19,16 @@ data class PlanetUiModel(
     fun getId(): Int {
         return url[url.length - 2].toInt()
     }
+
+    override fun toString(): String {
+        return "Name : $name \n" +
+                "Rotation Period : $rotationPeriod \n" +
+                "Orbital Period : $orbitalPeriod \n" +
+                "Diameter : $diameter \n" +
+                "Climate : $climate \n" +
+                "Gravity : $gravity \n" +
+                "Terrain : $terrain \n" +
+                "Surface Water : $surfaceWater \n" +
+                "Population : $population \n"
+    }
 }

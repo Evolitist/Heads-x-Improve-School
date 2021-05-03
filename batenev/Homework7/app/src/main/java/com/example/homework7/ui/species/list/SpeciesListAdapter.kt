@@ -1,4 +1,4 @@
-package com.example.homework7.ui.species
+package com.example.homework7.ui.species.list
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -6,11 +6,10 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.homework7.databinding.ListItemBinding
-import com.example.homework7.network.model.species.SpeciesApiModel
 import com.example.homework7.ui.species.model.SpeciesUiModel
 
 class SpeciesListAdapter(
-
+    private val onItemClick: (item: SpeciesUiModel) -> Unit
 ) : ListAdapter<SpeciesUiModel, SpeciesListAdapter.SpeciesViewHolder>(DiffUtilCallback) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SpeciesViewHolder {
@@ -31,7 +30,12 @@ class SpeciesListAdapter(
         private val binding: ListItemBinding
     ) : RecyclerView.ViewHolder(binding.root) {
         fun bind(item: SpeciesUiModel) {
-            binding.title.text = item.name
+            binding.apply {
+                title.text = item.name
+                root.setOnClickListener {
+                    onItemClick.invoke(item)
+                }
+            }
         }
     }
 

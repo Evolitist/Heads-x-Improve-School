@@ -23,4 +23,20 @@ data class StarshipUiModel(
     fun getId(): Int {
         return url[url.length - 2].toInt()
     }
+
+    override fun toString(): String {
+        return "Name : $name \n" +
+                "Model : $model \n" +
+                "Starship Class : $starshipClass \n" +
+                "Manufacturer : $manufacturer \n" +
+                "Cost In Credits : $costInCredits \n" +
+                "Length : $length \n" +
+                "Crew : $crew \n" +
+                "Passengers : $passengers \n" +
+                "Max Atmosphering Speed : $maxAtmospheringSpeed \n" +
+                "Hyperdrive Rating : $hyperdriveRating \n" +
+                "MGLT : $mglt \n" +
+                "Cargo Capacity : $cargoCapacity \n" +
+                "Consumables : $consumables "
+    }
 }

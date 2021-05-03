@@ -1,4 +1,4 @@
-package com.example.homework7.ui.starships
+package com.example.homework7.ui.starships.list
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -9,7 +9,7 @@ import com.example.homework7.databinding.ListItemBinding
 import com.example.homework7.ui.starships.model.StarshipUiModel
 
 class StarshipsListAdapter(
-
+    private val onItemClick: (item: StarshipUiModel) -> Unit
 ) : ListAdapter<StarshipUiModel, StarshipsListAdapter.StarshipsViewHolder>(DiffUtilCallback) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): StarshipsViewHolder {
@@ -30,7 +30,12 @@ class StarshipsListAdapter(
         private val binding: ListItemBinding
     ) : RecyclerView.ViewHolder(binding.root) {
         fun bind(item: StarshipUiModel) {
-            binding.title.text = item.name
+            binding.apply {
+                title.text = item.name
+                root.setOnClickListener {
+                    onItemClick.invoke(item)
+                }
+            }
         }
     }
 

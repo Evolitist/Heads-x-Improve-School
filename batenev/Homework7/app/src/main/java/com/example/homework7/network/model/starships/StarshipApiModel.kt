@@ -20,7 +20,9 @@ data class StarshipApiModel(
     val consumables: String,
     val url: String
 ) {
-    fun getId(): Int {
-        return url[url.length - 2].toInt()
+    fun getId(): Long {
+        url.split("/").let {
+            return it[it.size - 2].toLong()
+        }
     }
 }
