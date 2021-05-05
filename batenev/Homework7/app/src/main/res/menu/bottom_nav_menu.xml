@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_planets"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/planets_title" />
+
+    <item
+        android:id="@+id/navigation_species"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/species_title" />
+
+    <item
+        android:id="@+id/navigation_spaceships"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/spaceships_title" />
+
+</menu>

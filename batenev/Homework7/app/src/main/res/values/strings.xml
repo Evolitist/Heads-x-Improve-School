@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Homework7</string>
+    <string name="planets_title">Planets</string>
+    <string name="species_title">Species</string>
+    <string name="spaceships_title">Starships</string>
+
+    <string name="common_loading_string">Loading…</string>
+    <string name="common_apiError_string">Api Error</string>
+    <string name="common_emptyResponse_string">Empty response</string>
+    <string name="common_networkError_string">Network error. Check internet connection and try again.</string>
+    <string name="common_unknownError_string">Unknown error. Try again later.</string>
+</resources>
