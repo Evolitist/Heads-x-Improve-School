@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">lesson_11_custom_view</string>
+    <dimen name="default_radius_point">5dp</dimen>
+</resources>
