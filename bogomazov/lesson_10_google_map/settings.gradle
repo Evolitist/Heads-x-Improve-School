@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "lesson_10_google_map"
