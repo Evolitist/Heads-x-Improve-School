@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Homework11</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="main_menu_find_title">Find</string>
+</resources>
